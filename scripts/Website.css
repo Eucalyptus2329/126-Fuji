@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+.hideme {
+    opacity:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.feature{
+    width: 100px;
+    margin-right: 80px;
+    margin-top:20px;
+}
+
+#logo {
+   padding-left:70px;
+   font-size: 25px;
+   text-align: center;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > ul > li {
+    display: block;
+}
+
+nav {
+    margin-left:0px;
+    padding-top:20px;
+    width: 50%;
+	max-width: 300px;
+	height: 50px;
+}
+
+.feature{
+    padding-top: 18px;
+    display:flex;
+    margin-left:670px ;
+}
+
+.models{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding:80px 0 100px 0;
+}
+
+a{
+    color: black;
+    text-decoration:none ;
+}
+
+.model1{
+    margin-right: 510;
+    border: none;
+}
+
+#inner-img {
+  transition: 0.5s;
+}
+
+#inner-img:hover {
+  transform: scale(1.1);
+}
+
+.model2{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.men-label {
+    padding:100px 60px 0 70px;
+    z-index: 1;
+}
+
+.women-label{
+    padding:100px 60px 0 0;
+}
+
+.women-label h1{
+    padding-left: 50px;
+}
+
+.men-label h1,.women-label h1 {
+    font-size: 60px;
+}
+
+ion-icon:hover, .men-label h1:hover, .talent h1:hover, .h2:hover, .women-label h1:hover, #logo:hover, .men-label h4:hover, .women-label h4:hover, .about1 h1:hover{
+    color: #FFBF00;
+    transition: 0.3s
+}
+
+.men-label h4{
+   text-align: center;
+}
+
+.women-label h4{
+   text-align: center;
+   padding-left: 60px;
+}
+
+.about1{
+    width: 100%;
+    height: 100%;
+}
+.about{
+    width: 100%;
+    height: 100%;
+}
+
+#aboutimg{
+    padding-left: 200px;
+}
+
+#aboutbody{
+    z-index: 1;
+    text-align: center;
+    max-width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 100px;
+    height: auto;
+}
+
+.abouthead{
+    text-align: center;
+}
+
+
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: #000;
+    z-index: 100;
+}
+
+.load-photos{
+    z-index:103;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    background: black;
+    display: none;
+} 
+
+#loadtitle{
+    font-size: 64px;
+    font-family: 'Parisienne', cursive;
+    color:white;
+    z-index:10;
+    text-align: center;
+    padding-top:20px;
+}
+/* Talent Page ----------------------------------------------- */
+
+.talent h1{
+    text-align: center;
+    font-size: 37px;
+}
+
+.talent .model, .talent .artist, .talent .athlete{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.carosel{
+    /* display: none; */
+    position: absolute;
+    margin-left: 34%;
+    height: 400px;
+    width: 400px;
+    background-image: url("https://i.pinimg.com/474x/21/32/a9/2132a99ffa0557a823964b7315dfdfbc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+
+    animation-name: animate;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-image: url("https://cdnblog.picsart.com/2016/05/Photo-23-08-2015-11-55-05-am.jpg?type=webp&to=max&r=400&q=95");    
+    }
+    20%{
+        background-image: url("https://albumera.com/static/media/onlinephotoshoot.6a951f9a.jpg");
+    }
+    40%{
+        background-image: url("https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/portrait-of-marsha-hunt-patrick-lichfield.jpg");
+    }
+    60%{
+        background-image: url("https://pbs.twimg.com/profile_images/1252094334066929665/yWA5gUuH_400x400.jpg");
+    }
+    80%{
+        background-image: url("https://biographymask.com/wp-content/uploads/2020/05/Florian.jpg");
+    }
+    100%{
+        background-image: url("https://www.hypefresh.co/wp-content/uploads/2021/09/kb1qlSml_400x400.jpg");
+    }
+    
+} 
+
+.carosel2{
+    position: absolute;
+    margin-left: 34%;
+    height: 400px;
+    width: 400px;
+    background-image: url("https://i.scdn.co/image/ab6761610000e5eb1f0d3456f355db22d3a3d1e5");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+
+    animation-name: animate2;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate2 {
+    0%{
+        background-image: url("https://64.media.tumblr.com/08cc58fb62d1ad0b34d8bd61de3023ce/bc3c0eca7d82e611-be/s400x600/fcec44df0fdda008e8091c44bf202a774e872268.pnj");    
+    }
+    20%{
+        background-image: url("https://pbs.twimg.com/profile_images/1515980812725981185/tu8yW5UA_400x400.jpg");
+    }
+    40%{
+        background-image: url("https://cdn.shopify.com/s/files/1/2976/0132/products/3813786-2561547_400x.jpg?v=1589583844");
+    }
+    60%{
+        background-image: url("https://cdnb.artstation.com/p/assets/images/images/019/097/233/smaller_square/roman-zuravliov-123jojis.jpg?1562010055");
+    }
+    80%{
+        background-image: url("https://images.fanart.tv/bigpreview/blow-your-mind-mwah-remixes-619f9b7e0662a.jpg");
+    }
+    100%{
+        background-image: url("https://64.media.tumblr.com/c8f11e4d19ba34f6f64d32383fa93730/b29c5b318147ce8d-6d/s400x600/e7fe8ded97339ef0b6ef7d26941d63a8d111aab1.png");
+    }
+}
+.carosel3{
+    position: absolute;
+    margin-left: 34%;
+    height: 400px;
+    width: 400px;
+    background-image: url("https://i.pinimg.com/originals/73/68/b4/7368b430cf492e2bfc377bcdf0a91a5b.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+
+    animation-name: animate3;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate3 {
+    0%{
+        background-image: url("https://acadweb.hvcc.edu/~j.baker/Animation%20-%20Final/Gymshark/site/steve%20cook.png");    
+    }
+    20%{
+        background-image: url("https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://bafybeib5tvle3xiijc4xrvphx4cryzmaz6qe5kea3uymyprkdo4vejcbgi.ipfs.dweb.link/189.png");
+    }
+    40%{
+        background-image: url("https://media.npr.org/assets/img/2022/03/07/gettyimages-1347138570_sq-1ea2c14bbbd15c20b38327782140ac81f72190d9.jpg?s=400");
+    }
+    60%{
+        background-image: url("https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/arnold-schwarzenegger-fox-carmen.jpg");
+    }
+    80%{
+        background-image: url("https://pbs.twimg.com/profile_images/1544966258256482304/XTxbZyXj_400x400.jpg");
+    }
+    100%{
+        background-image: url("https://cdn.bleacherreport.net/images_root/slides/photos/000/190/347/Golf-clothing-Tiger-Woods1_original.jpg?1270492163");
+    }
+    
+} 
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-300px * 7));
+    }
+    
+
+  }
+
+@keyframes scroll2 {
+0% {
+    transform: translateX(0);
+}
+100% {
+    transform: translateX(calc(300px * 7));
+}
+}
+
+#multiply{
+    height:75px;
+    /* border: solid; */
+    width: 3000px;
+    font-size: 50px;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Parisienne', cursive;
+    margin:10px 0;
+}
+
+#multiply2{
+    /* border: solid; */
+    height:75px;
+    width: 3000px;
+    font-size: 50px;
+    overflow: hidden;
+    display: flex;
+    left:-1800px;
+    font-family: 'Parisienne', cursive;
+}
+
+.backtext{
+    height: 400px;
+    top:-1400px;
+    /* overflow: hidden; */
+} 
+.backtext2{
+    /* border: solid; */
+    height: 400px;
+    top:-1313px;
+}
+.backtext3{
+    /* border: solid; */
+    height: 400px;
+    top:-1230px;
+}
+
+.backtext, .backtext2,.backtext3{
+    z-index: -10;
+}
+
+.backtext #multiply, .backtext2 #multiply,.backtext3 #multiply{
+    animation: scroll 50s linear infinite;
+    z-index: -10;
+    position: relative;
+}
+
+#multiply2{
+    animation: scroll2 50s linear infinite;
+    z-index: -10;
+    position: relative;
+}
+.slide-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+}
+
+ .slider{
+    margin-top:50px;
+    width:100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+ }
+
+ /* .slide-track:hover{
+    animation-play-state:paused;
+ } */
+
+ .slide img{
+    /* display: none; */
+    z-index:1;
+    position: relative;
+ }
+
+ .slide{
+    width: 500px;
+    height: 300px;
+ }
+
+ /* .slide img:hover{
+    z-index:0;
+    filter: blur(1px);
+ } */
+
+ .textbox{
+    border: solid;
+    width:300px;
+    height: 300px;
+    text-align: center;
+    padding-top:100px;
+    z-index: 2;
+    position: relative;
+ }
+
+ .textbox p{
+    background-color: #848884;
+    color: white;
+    font-size: 12px;
+    padding: 16px 0 ;
+    width: 300px;
+    font-family: 'Merriweather', serif;
+}
+ 
+/* Contact Page------------------------------------- */
+.contact{
+    border: groove;
+    width:200px;
+    height: 250px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+footer{
+    padding-top: 50px;
+    width:250px;
+    height: 100px;
+    margin: auto;
+}
+
+.social-container ion-icon{
+    padding-left: 38px ;
+}
+
+.author{
+    text-align: center;
+}
+
+#contacthead{
+    font-size: 20px;
+}
+
+#contactbody {
+    font-size: 10px;
+}
+
+
+.contact, footer, .models, .about, .talent, header, .inprogress,.slider{
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+
+
+.body{
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3.2s;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/* ------------------------------------------ Talent Page  */
+
+.inprogress{
+    padding: 50px 50px 50px 50px;
+    width:250px;
+    height: 150px;
+    border: groove;
+    margin: auto;
+    text-align: center;
+}
+
+.inprogress a{
+    color: lightskyblue;
+}

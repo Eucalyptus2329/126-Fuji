@@ -10,7 +10,8 @@ Languages:
 2. a bit of JS
 
 Challenges: 
-1. Gap in knowledge to create eye-catching features a user would appreciate.
+1. Gap in knowledge to create eye-catching features a user would appreciate
+
 Solution:
 - LOTS of googling, utilizing resources such as youtube, stack-overflow, and garnering inspiration from awwwards.com
 

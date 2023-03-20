@@ -14,7 +14,6 @@ Challenges:
 
 Solution:
 - LOTS of googling, utilizing resources such as youtube, stack-overflow, and garnering inspiration from awwwards.com
-
 Future Improvements/Additions:
  - Create a backend database to store information on potential talent 
  - Learn to scale website for when there is a larger volume of viewers
